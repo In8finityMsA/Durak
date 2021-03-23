@@ -49,7 +49,7 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" TargetName="Border" >
                                             <Setter.Value>
-                                                <ImageBrush ImageSource="EfijTfZWAAcHuxR.jpg"/>
+                                                <ImageBrush ImageSource="Assets/luka_ziga.jpg"/>
                                             </Setter.Value>
                                         </Setter>
                                     </Trigger>
@@ -60,7 +60,7 @@
                 </Style>
             </Button.Style>
             <Button.Background>
-                <ImageBrush ImageSource="lukoshenkoklass.jpg" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="Assets/luka_klass.jpg" Stretch="UniformToFill"/>
             </Button.Background>
             <Button.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -71,7 +71,7 @@
                 </LinearGradientBrush>
             </Button.Foreground> ДА
         </Button>
-        <Button x:Name="NoBtn" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="NoBtn_Click" Margin="0,200,200,0" BorderThickness="5" Content="НЕТ" BorderBrush="Red">
+        <Button x:Name="NoBtn" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="NoBtn_Click" Margin="0,200,200,0" BorderThickness="5" Content="НЕТ" BorderBrush="Red" MouseEnter="NoBtn_MouseEnter">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
                     <Setter Property="Background" Value="LightBlue" />
@@ -94,7 +94,7 @@
                                     <Trigger Property="IsMouseOver" Value="True">
                                         <Setter Property="Background" TargetName="Border" >
                                             <Setter.Value>
-                                                <ImageBrush ImageSource="ndyuq11dpxep-rikardo-milos.jpg"/>
+                                                <ImageBrush ImageSource="Assets/rikardo_milos.jpg"/>
                                             </Setter.Value>
                                         </Setter>
                                     </Trigger>
@@ -114,9 +114,9 @@
                 </LinearGradientBrush>
             </Button.Foreground>
             <Button.Background>
-                <ImageBrush ImageSource="tenor.gif" Stretch="UniformToFill"/>
+                <ImageBrush ImageSource="Assets/rikardo_milos1.gif" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
-        <MediaElement Source="C:\Users\Richard\source\repos\Durak\videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
+        <MediaElement Source="Assets/videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
     </Grid>
 </Window>

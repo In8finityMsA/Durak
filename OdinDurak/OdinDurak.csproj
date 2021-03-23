@@ -102,19 +102,27 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="tenor.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="lukoshenkoklass.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="4-2.gif" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="EfijTfZWAAcHuxR.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="ndyuq11dpxep-rikardo-milos.jpg" />
+    <Content Include="Assets\4-2.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\luka_klass.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\luka_ziga.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\rikardo_milos.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\rikardo_milos1.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\videoplayback.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
