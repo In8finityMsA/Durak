@@ -1,0 +1,33 @@
+﻿<Window x:Class="OdinDurak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OdinDurak"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid KeyboardNavigation.TabNavigation="None" KeyboardNavigation.DirectionalNavigation="None" MouseMove="Grid_MouseMove">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" >
+                <GradientStop Color="Red" Offset="0.0" />
+                <GradientStop Color="Orange" Offset="0.17" />
+                <GradientStop Color="Yellow" Offset="0.34" />
+                <GradientStop Color="LimeGreen" Offset="0.51" />
+                <GradientStop Color="Blue" Offset="0.68" />
+                <GradientStop Color="Magenta" Offset="0.85" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Height="85" Margin="147,50,146.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" FontSize="24" FontFamily="Comic Sans MS" TextAlignment="Center" FontWeight="Bold">
+            <TextBlock.Effect>
+                <DropShadowEffect Color="#FFFF0000"/>
+            </TextBlock.Effect>Ну вот ты скажи, только честно.
+            <LineBreak/> ТЫ СОВСЕМ ДЕБИЛ?</TextBlock>
+        <Button Name="YesBtn" Margin="200, 200, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Click="YesBtn_Click">
+            <TextBox Name="YesText" Text="ДА" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="75" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold"  BorderThickness="5" BorderBrush="Green"/>
+        </Button>
+        <Button Name="NoBtn" Margin="0, 200, 200, 0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" Click="NoBtn_Click" MouseEnter="NoBtn_MouseEnter">
+            <TextBox Name="NoText" Text="НЕТ" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Height="75" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold" BorderThickness="5" BorderBrush="Purple" MouseEnter="NoText_MouseEnter" />
+        </Button>
+        <MediaElement Source="E:\videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
+    </Grid>
+</Window>

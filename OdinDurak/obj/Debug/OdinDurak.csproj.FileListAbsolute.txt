@@ -1,0 +1,15 @@
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\bin\Debug\OdinDurak.exe.config
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\bin\Debug\OdinDurak.exe
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\bin\Debug\OdinDurak.pdb
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csprojAssemblyReference.cache
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\MainWindow.g.cs
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\App.g.cs
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak_MarkupCompile.cache
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak_MarkupCompile.lref
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\MainWindow.baml
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.g.resources
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.Properties.Resources.resources
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csproj.GenerateResource.cache
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csproj.CoreCompileInputs.cache
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.exe
+C:\Users\Юля\source\repos\OdinDurak\OdinDurak\obj\Debug\OdinDurak.pdb
