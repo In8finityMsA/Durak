@@ -9,25 +9,114 @@
     <Grid KeyboardNavigation.TabNavigation="None" KeyboardNavigation.DirectionalNavigation="None" MouseMove="Grid_MouseMove">
         <Grid.Background>
             <LinearGradientBrush StartPoint="1,0" EndPoint="1,1" >
-                <GradientStop Color="Red" Offset="0.0" />
-                <GradientStop Color="Orange" Offset="0.17" />
-                <GradientStop Color="Yellow" Offset="0.34" />
-                <GradientStop Color="LimeGreen" Offset="0.51" />
-                <GradientStop Color="Blue" Offset="0.68" />
-                <GradientStop Color="Magenta" Offset="0.85" />
+                <GradientStop Color="Red" Offset="0.151" />
+                <GradientStop Color="Orange" Offset="0.167" />
+                <GradientStop Color="Yellow" Offset="0.327" />
+                <GradientStop Color="Lime" Offset="0.488" />
+                <GradientStop Color="Blue" Offset="0.661" />
+                <GradientStop Color="Magenta" Offset="0.828" />
+                <GradientStop Color="#FFFFCF00" Offset="0.323"/>
+                <GradientStop Color="#FFFCFF00" Offset="0.479"/>
+                <GradientStop Color="#FF00FF3A" Offset="0.65"/>
+                <GradientStop Color="#FE0000FF" Offset="0.813"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock HorizontalAlignment="Center" Height="85" Margin="147,50,146.6,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" FontSize="24" FontFamily="Comic Sans MS" TextAlignment="Center" FontWeight="Bold">
+        <TextBlock HorizontalAlignment="Center" Height="85" Margin="0,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" FontSize="30" FontFamily="Comic Sans MS" TextAlignment="Center" FontWeight="Bold">
             <TextBlock.Effect>
                 <DropShadowEffect Color="#FFFF0000"/>
             </TextBlock.Effect>Ну вот ты скажи, только честно.
             <LineBreak/> ТЫ СОВСЕМ ДЕБИЛ?</TextBlock>
-        <Button Name="YesBtn" Margin="200, 200, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" Click="YesBtn_Click">
-            <TextBox Name="YesText" Text="ДА" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="75" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold"  BorderThickness="5" BorderBrush="Green"/>
+        <Button Name="YesBtn" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="YesBtn_Click" Margin="200,200,0,0" BorderThickness="5">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}" BorderThickness="5" CornerRadius="10">
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                                            <GradientStop Color="Red" Offset="1"/>
+                                            <GradientStop Color="#FFFFA400" Offset="0.74"/>
+                                            <GradientStop Color="Lime" Offset="0.542"/>
+                                            <GradientStop Color="Blue" Offset="0.339"/>
+                                            <GradientStop Color="#FFDD00FF" Offset="0.142"/>
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" TargetName="Border" >
+                                            <Setter.Value>
+                                                <ImageBrush ImageSource="EfijTfZWAAcHuxR.jpg"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <Button.Background>
+                <ImageBrush ImageSource="lukoshenkoklass.jpg" Stretch="UniformToFill"/>
+            </Button.Background>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0DFF0D" Offset="0.819"/>
+                    <GradientStop Color="Red" Offset="0.551"/>
+                    <GradientStop Color="#FFAFFF11" Offset="0.657"/>
+                    <GradientStop Color="#FFFF0101" Offset="0.643"/>
+                </LinearGradientBrush>
+            </Button.Foreground> ДА
         </Button>
-        <Button Name="NoBtn" Margin="0, 200, 200, 0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" Click="NoBtn_Click" MouseEnter="NoBtn_MouseEnter">
-            <TextBox Name="NoText" Text="НЕТ" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Height="75" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold" BorderThickness="5" BorderBrush="Purple" MouseEnter="NoText_MouseEnter" />
+        <Button x:Name="NoBtn" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="NoBtn_Click" Margin="0,200,200,0" BorderThickness="5" Content="НЕТ" BorderBrush="Red">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="LightBlue" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border x:Name="Border" Background="{TemplateBinding Background}" BorderThickness="5" CornerRadius="10">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="White" Offset="0.305"/>
+                                            <GradientStop Color="White" Offset="1"/>
+                                            <GradientStop Color="Red" Offset="0.341"/>
+                                            <GradientStop Color="White" Offset="0.695"/>
+                                            <GradientStop Color="Red" Offset="0.659"/>
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" TargetName="Border" >
+                                            <Setter.Value>
+                                                <ImageBrush ImageSource="ndyuq11dpxep-rikardo-milos.jpg"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0.305"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="Red" Offset="0.341"/>
+                    <GradientStop Color="White" Offset="0.695"/>
+                    <GradientStop Color="Red" Offset="0.659"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush ImageSource="tenor.gif" Stretch="UniformToFill"/>
+            </Button.Background>
         </Button>
-        <MediaElement Source="E:\videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
+        <MediaElement Source="C:\Users\Richard\source\repos\Durak\videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
     </Grid>
 </Window>

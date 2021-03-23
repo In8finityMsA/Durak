@@ -67,10 +67,6 @@ namespace OdinDurak {
             Console.WriteLine(prevPos + "   " + curPos + ":::" + distance);
         }
 
-        private void NoBtn_Click_1(object sender, RoutedEventArgs e) {
-
-        }
-
         private void NoText_MouseEnter(object sender, MouseEventArgs e) {
             MessageBox.Show("OhShit");
         }
