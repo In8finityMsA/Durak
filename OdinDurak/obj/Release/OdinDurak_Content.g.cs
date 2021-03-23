@@ -11,6 +11,7 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/4-2.gif")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/luka_klass.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/luka_ziga.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/notmyfault64.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/rikardo_milos.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/rikardo_milos1.gif")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/videoplayback.mp4")]

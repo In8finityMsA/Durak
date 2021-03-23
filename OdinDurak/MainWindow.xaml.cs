@@ -30,21 +30,25 @@ namespace OdinDurak {
         }
 
         private void NoBtn_Click(object sender, RoutedEventArgs e) {
-            MessageBox.Show("NoBtn");
+            StartStakes();
         }
 
         private void YesBtn_Click(object sender, RoutedEventArgs e) {
             media.Visibility = Visibility.Visible;
             media.Play();
-            MessageBox.Show("YesBtn");
+        }
+
+        private void StartStakes()
+        {
+            Stakes stakes = new Stakes();
+            stakes.Show();
+            this.Close();
         }
 
 
 
         private void NoBtn_MouseEnter(object sender, MouseEventArgs e) {
-            Console.WriteLine("Enter");
-            Button btn = sender as Button;
-
+            StackPanel panel = sender as StackPanel;
             Vector diff = Point.Subtract(curPos, prevPos);
             double distance = diff.Length > 0 ? diff.Length : 0.01;
             double sin = diff.Y / distance;
@@ -55,29 +59,22 @@ namespace OdinDurak {
             transformX += (TRANSFORM_SCALAR + distance) * cos;
             transformY += (TRANSFORM_SCALAR + distance) * sin;
             TranslateTransform transform = new TranslateTransform(transformX, transformY);
-            btn.RenderTransform = transform;
+            panel.RenderTransform = transform;
 
-            Point btnCoord = btn.TransformToAncestor(this).Transform(new Point(0, 0));
-            Console.WriteLine($"({btnCoord.X}, {btnCoord.Y})");
-            if (btnCoord.X < 0 || btnCoord.X >= this.ActualWidth - btn.ActualWidth)
+            Point btnCoord = panel.TransformToAncestor(this).Transform(new Point(0, 0));
+            if (btnCoord.X + panel.ActualWidth / 3 < 0 || btnCoord.X >= this.ActualWidth - panel.ActualWidth)
             {
-                MessageBox.Show("X out");
+                StartStakes();
             }
-            if (btnCoord.Y < 0 || btnCoord.Y >= this.ActualHeight - btn.ActualHeight)
+            if (btnCoord.Y + panel.ActualHeight / 3 < 0 || btnCoord.Y >= this.ActualHeight - panel.ActualHeight)
             {
-                MessageBox.Show("Y out");
+                StartStakes();
             }
-
         }
 
         private void Grid_MouseMove(object sender, MouseEventArgs e) {
             prevPos = curPos;
             curPos = e.GetPosition(this);
-            Vector diff = Point.Subtract(curPos, prevPos);
-            double distance = diff.Length > 0 ? diff.Length : 0.01;
-            double sin = diff.Y / distance;
-            double cos = diff.X / distance;
-            Console.WriteLine(diff.X + "   " + diff.Y + ":::" + distance + "; cos:" + cos + "; sin:" + sin);
         }
 
         private void NoText_MouseEnter(object sender, MouseEventArgs e) {

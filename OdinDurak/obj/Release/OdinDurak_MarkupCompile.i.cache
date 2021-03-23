@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Debug\
+C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Release\
 OdinDurak
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\App.xaml
 2-1471833768
 7-1643124477
-6574862306
+7-502716526
 13-1505183044
 MainWindow.xaml;Stakes.xaml;
 

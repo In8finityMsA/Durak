@@ -55,8 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="stakes.xaml.cs">
-      <DependentUpon>stakes.xaml</DependentUpon>
+    <Compile Include="Stakes.xaml.cs">
+      <DependentUpon>Stakes.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -70,7 +70,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="stakes.xaml">
+    <Page Include="Stakes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +114,7 @@
     <Content Include="Assets\luka_ziga.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\notmyfault64.exe" />
     <Content Include="Assets\rikardo_milos.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

