@@ -20,12 +20,16 @@ namespace OdinDurak
     public partial class Stakes : Window
     {
 
-        int correct;
+        private readonly int correct;
+        private const string CHEAT = "NOYOU";
+        private StringBuilder input;
+        private bool isCheat = false;
         public Stakes()
         {
             InitializeComponent();
 
             correct = Choice();
+            input = new StringBuilder();
             foreach (UIElement button in GridRoot.Children)
             {
                 if (button is Button)
@@ -43,7 +47,7 @@ namespace OdinDurak
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string s = (string)((Button)e.OriginalSource).Content;
+            string s = (string)((Button)e.OriginalSource).Tag;
             int input = Int32.Parse(s);
             
             if(correct == input)
@@ -59,5 +63,66 @@ namespace OdinDurak
             
         }
 
+        private void Stakes_KeyDown(object sender, KeyEventArgs e)
+        {
+            Console.WriteLine("Key DOwn");
+            if (!isCheat)
+            {
+                Console.WriteLine(e.Key.ToString().ToUpper());
+                if (e.Key.ToString().ToUpper().Equals(CHEAT[input.Length].ToString()))
+                {
+                    Console.WriteLine(input);
+                    input.Append(e.Key.ToString());
+                    if (input.Length == CHEAT.Length)
+                    {
+                        MessageBox.Show("It's a simple spell but quite unbreakable");
+                        isCheat = true;
+                        foreach (UIElement button in GridRoot.Children)
+                        {
+                            (button as Button).MouseEnter += Button_MouseEnter;
+                            (button as Button).MouseLeave += Button_MouseLeave;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(input);
+                    input.Clear();
+                }
+
+            }
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            Button btn = sender as Button;
+            string s = (string)((Button)e.OriginalSource).Tag;
+            btn.Content = s;
+            btn.FontSize = 48;
+            btn.Foreground = Brushes.Black;
+            btn.Background = Brushes.LightGray;
+
+        }
+
+        private void Button_MouseEnter(object sender, RoutedEventArgs e)
+        {
+            Button btn = sender as Button;
+            string s = (string)((Button)e.OriginalSource).Tag;
+            int input = Int32.Parse(s);
+            if (input != correct)
+            {
+                btn.Content = "BSOD";
+                btn.FontSize = 24;
+                btn.Foreground = Brushes.White;
+                btn.Background = new SolidColorBrush(Color.FromRgb(0,0,130));
+            }
+            else
+            {
+                btn.Content = "WIN";
+                btn.FontSize = 24;
+                btn.Foreground = Brushes.Black;
+                btn.Background = Brushes.Gold;
+            }
+        }
     }
 }
