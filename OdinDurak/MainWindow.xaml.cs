@@ -50,6 +50,8 @@ namespace OdinDurak {
             double sin = diff.Y / distance;
             double cos = diff.X / distance;
 
+            //btn.Margin = new Thickness(0, btn.Margin.Top + (TRANSFORM_SCALAR + distance) * sin, btn.Margin.Right - (TRANSFORM_SCALAR + distance) * cos, 0);
+
             transformX += (TRANSFORM_SCALAR + distance) * cos;
             transformY += (TRANSFORM_SCALAR + distance) * sin;
             TranslateTransform transform = new TranslateTransform(transformX, transformY);
@@ -75,7 +77,7 @@ namespace OdinDurak {
             double distance = diff.Length > 0 ? diff.Length : 0.01;
             double sin = diff.Y / distance;
             double cos = diff.X / distance;
-            //Console.WriteLine(diff.X + "   " + diff.Y + ":::" + distance + "; cos:" + cos + "; sin:" + sin);
+            Console.WriteLine(diff.X + "   " + diff.Y + ":::" + distance + "; cos:" + cos + "; sin:" + sin);
         }
 
         private void NoText_MouseEnter(object sender, MouseEventArgs e) {

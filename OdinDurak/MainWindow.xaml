@@ -71,6 +71,7 @@
                 </LinearGradientBrush>
             </Button.Foreground> ДА
         </Button>
+        <StackPanel KeyboardNavigation.TabNavigation="None" KeyboardNavigation.DirectionalNavigation="None">
         <Button x:Name="NoBtn" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="NoBtn_Click" Margin="0,200,200,0" BorderThickness="5" Content="НЕТ" BorderBrush="Red" MouseEnter="NoBtn_MouseEnter">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">
@@ -117,6 +118,8 @@
                 <ImageBrush ImageSource="Assets/rikardo_milos1.gif" Stretch="UniformToFill"/>
             </Button.Background>
         </Button>
+        </StackPanel>
+        
         <MediaElement Source="Assets/videoplayback.mp4" LoadedBehavior="Manual" Name="media" Visibility="Hidden" HorizontalAlignment="Center" Height="420" Margin="0,0,0,0" VerticalAlignment="Center" Width="800"/>
     </Grid>
 </Window>
