@@ -71,7 +71,7 @@
                 </LinearGradientBrush>
             </Button.Foreground> ДА
         </Button>
-        <StackPanel x:Name="NoPanel" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,180,180,0" Background="Transparent" KeyboardNavigation.TabNavigation="None" KeyboardNavigation.DirectionalNavigation="None" MouseEnter="NoBtn_MouseEnter">
+        <StackPanel x:Name="NoPanel" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,180,180,0" Background="Transparent" KeyboardNavigation.TabNavigation="None" KeyboardNavigation.DirectionalNavigation="None">
         <Button x:Name="NoBtn" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Top" Width="100" Height="100" FontSize="32" FontFamily="Comic Sans MS" FontWeight="Bold" Click="NoBtn_Click" BorderThickness="5" Content="НЕТ" BorderBrush="Red">
             <Button.Style>
                 <Style TargetType="{x:Type Button}">

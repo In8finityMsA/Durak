@@ -23,7 +23,7 @@ namespace OdinDurak {
         private Point curPos = new Point(0, 0);
         private double transformX = 0;
         private double transformY = 0;
-        private const int TRANSFORM_SCALAR = 40;
+        private const int TRANSFORM_SCALAR = 20;
 
         public MainWindow() {
             InitializeComponent();
@@ -45,22 +45,8 @@ namespace OdinDurak {
             this.Close();
         }
 
-
-
-        private void NoBtn_MouseEnter(object sender, MouseEventArgs e) {
-            StackPanel panel = sender as StackPanel;
-            Vector diff = Point.Subtract(curPos, prevPos);
-            double distance = diff.Length > 0 ? diff.Length : 0.01;
-            double sin = diff.Y / distance;
-            double cos = diff.X / distance;
-
-            //btn.Margin = new Thickness(0, btn.Margin.Top + (TRANSFORM_SCALAR + distance) * sin, btn.Margin.Right - (TRANSFORM_SCALAR + distance) * cos, 0);
-
-            transformX += (TRANSFORM_SCALAR + distance) * cos;
-            transformY += (TRANSFORM_SCALAR + distance) * sin;
-            TranslateTransform transform = new TranslateTransform(transformX, transformY);
-            panel.RenderTransform = transform;
-
+        private void CheckBorders(StackPanel panel)
+        {
             Point btnCoord = panel.TransformToAncestor(this).Transform(new Point(0, 0));
             if (btnCoord.X + panel.ActualWidth / 3 < 0 || btnCoord.X >= this.ActualWidth - panel.ActualWidth)
             {
@@ -72,13 +58,38 @@ namespace OdinDurak {
             }
         }
 
+        private void MovePanel(StackPanel panel, Point mousePos)
+        {
+            Point btnCoord = panel.TransformToAncestor(this).Transform(new Point(0, 0));
+            Point btnCenter = new Point(btnCoord.X + panel.ActualWidth / 2, btnCoord.Y + panel.ActualHeight / 2);
+            Vector diff = Point.Subtract(btnCenter, mousePos);
+            double distance = diff.Length > 0 ? diff.Length : 0.01;
+            double sin = diff.Y / distance;
+            double cos = diff.X / distance;
+
+            transformX += (TRANSFORM_SCALAR + panel.ActualWidth / 2 - distance) * cos;
+            transformY += (TRANSFORM_SCALAR + panel.ActualHeight / 2 - distance) * sin;
+            TranslateTransform transform = new TranslateTransform(transformX, transformY);
+            panel.RenderTransform = transform;
+        }
+
+        private void CheckPanelOverlap(Point mousePos)
+        {
+            StackPanel panel = NoPanel;
+            Point mouseCoord = this.TranslatePoint(mousePos, panel);
+
+            if (mouseCoord.X > 0 && mouseCoord.X < panel.ActualWidth && mouseCoord.Y > 0 && mouseCoord.Y < panel.ActualHeight)
+            {
+                MovePanel(panel, mousePos);
+                CheckBorders(panel);
+            }
+        }
+
         private void Grid_MouseMove(object sender, MouseEventArgs e) {
             prevPos = curPos;
             curPos = e.GetPosition(this);
-        }
 
-        private void NoText_MouseEnter(object sender, MouseEventArgs e) {
-            MessageBox.Show("OhShit");
+            CheckPanelOverlap(curPos);
         }
     }
 }
