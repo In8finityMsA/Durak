@@ -52,7 +52,7 @@ namespace OdinDurak
             
             if(correct == input)
             {
-                MessageBox.Show("YOU WON");
+                MessageBox.Show("YOU WON!");
                 this.Close();
             }
             else
