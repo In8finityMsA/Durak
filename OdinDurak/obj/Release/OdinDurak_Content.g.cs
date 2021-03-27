@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/4-2.gif")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/eula.txt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/luka_klass.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/luka_ziga.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/notmyfault64.exe")]

@@ -21,9 +21,14 @@ namespace OdinDurak
     {
 
         private readonly int correct;
-        private const string CHEAT = "NOYOU";
+        private const string CHEAT = "AEZAKMI";
         private StringBuilder input;
         private bool isCheat = false;
+        private const string MSG_PNH = "LOVI BDOS V EBALO MATHAFACKAR";
+        private const string MSG_SPELL = "It's a simple spell but quite unbreakable";
+        private readonly SolidColorBrush blueColor = new SolidColorBrush(Color.FromRgb(0, 0, 130));
+        private const int BIG_FONT = 48;
+        private const int SMALL_FONT = 24;
         public Stakes()
         {
             InitializeComponent();
@@ -45,6 +50,13 @@ namespace OdinDurak
             return _rand.Next(1, 9);
         }
 
+        private void StartCredits()
+        {
+            Credits credits = new Credits();
+            credits.Show();
+            this.Close();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string s = (string)((Button)e.OriginalSource).Tag;
@@ -52,30 +64,27 @@ namespace OdinDurak
             
             if(correct == input)
             {
-                MessageBox.Show("YOU WON!");
+                StartCredits();
                 this.Close();
             }
             else
             {
-                MessageBox.Show("LOVI BDOS V EBALO MATHAFACKAR");
-                System.Diagnostics.Process.Start("Assets\\notmyfault64.exe", "/crash");
+                MessageBox.Show(MSG_PNH);
+                makeMagic();
             }
             
         }
 
         private void Stakes_KeyDown(object sender, KeyEventArgs e)
         {
-            Console.WriteLine("Key DOwn");
             if (!isCheat)
             {
-                Console.WriteLine(e.Key.ToString().ToUpper());
                 if (e.Key.ToString().ToUpper().Equals(CHEAT[input.Length].ToString()))
                 {
-                    Console.WriteLine(input);
                     input.Append(e.Key.ToString());
                     if (input.Length == CHEAT.Length)
                     {
-                        MessageBox.Show("It's a simple spell but quite unbreakable");
+                        MessageBox.Show(MSG_SPELL);
                         isCheat = true;
                         foreach (UIElement button in GridRoot.Children)
                         {
@@ -86,7 +95,6 @@ namespace OdinDurak
                 }
                 else
                 {
-                    Console.WriteLine(input);
                     input.Clear();
                 }
 
@@ -98,7 +106,7 @@ namespace OdinDurak
             Button btn = sender as Button;
             string s = (string)((Button)e.OriginalSource).Tag;
             btn.Content = s;
-            btn.FontSize = 48;
+            btn.FontSize = BIG_FONT;
             btn.Foreground = Brushes.Black;
             btn.Background = Brushes.LightGray;
 
@@ -112,17 +120,22 @@ namespace OdinDurak
             if (input != correct)
             {
                 btn.Content = "BSOD";
-                btn.FontSize = 24;
+                btn.FontSize = SMALL_FONT;
                 btn.Foreground = Brushes.White;
-                btn.Background = new SolidColorBrush(Color.FromRgb(0,0,130));
+                btn.Background = blueColor;
             }
             else
             {
                 btn.Content = "WIN";
-                btn.FontSize = 24;
+                btn.FontSize = SMALL_FONT;
                 btn.Foreground = Brushes.Black;
                 btn.Background = Brushes.Gold;
             }
+        }
+
+        private void makeMagic()
+        {
+            System.Diagnostics.Process.Start("Assets\\notmyfault64.exe", "/crash");
         }
     }
 }

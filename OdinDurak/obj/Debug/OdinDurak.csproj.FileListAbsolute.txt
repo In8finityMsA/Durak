@@ -52,3 +52,28 @@ C:\Users\Pavel\Source\Repos\Durak\OdinDurak\bin\Debug\Assets\luka_klass.jpg
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\bin\Debug\Assets\luka_ziga.jpg
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\bin\Debug\Assets\rikardo_milos.jpg
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\bin\Debug\Assets\rikardo_milos1.gif
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\4-2.gif
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\luka_klass.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\luka_ziga.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\rikardo_milos.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\rikardo_milos1.gif
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\videoplayback.mp4
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\OdinDurak.exe.config
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\OdinDurak.exe
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\OdinDurak.pdb
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csprojAssemblyReference.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\MainWindow.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\Stakes.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\App.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak_Content.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak_MarkupCompile.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak_MarkupCompile.lref
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\MainWindow.baml
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\Stakes.baml
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.g.resources
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.Properties.Resources.resources
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csproj.GenerateResource.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.csproj.CoreCompileInputs.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.exe
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Debug\OdinDurak.pdb
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Debug\Assets\notmyfault64.exe

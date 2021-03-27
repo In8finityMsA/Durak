@@ -18,9 +18,6 @@ namespace OdinDurak {
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window {
-
-        private Point prevPos = new Point(0, 0);
-        private Point curPos = new Point(0, 0);
         private double transformX = 0;
         private double transformY = 0;
         private const int TRANSFORM_SCALAR = 20;
@@ -30,7 +27,7 @@ namespace OdinDurak {
         }
 
         private void NoBtn_Click(object sender, RoutedEventArgs e) {
-            StartStakes();
+            StartCredits();
         }
 
         private void YesBtn_Click(object sender, RoutedEventArgs e) {
@@ -45,14 +42,22 @@ namespace OdinDurak {
             this.Close();
         }
 
+        private void StartCredits()
+        {
+            Credits credits = new Credits();
+            credits.Show();
+            this.Close();
+        }
+
         private void CheckBorders(StackPanel panel)
         {
+            const int panelHiddenDivider = 4; //larger - smaller part of button can be hidden by the window borders
             Point btnCoord = panel.TransformToAncestor(this).Transform(new Point(0, 0));
-            if (btnCoord.X + panel.ActualWidth / 3 < 0 || btnCoord.X >= this.ActualWidth - panel.ActualWidth)
+            if (btnCoord.X + panel.ActualWidth / panelHiddenDivider < 0 || btnCoord.X >= this.ActualWidth - panel.ActualWidth)
             {
                 StartStakes();
             }
-            if (btnCoord.Y + panel.ActualHeight / 3 < 0 || btnCoord.Y >= this.ActualHeight - panel.ActualHeight)
+            if (btnCoord.Y + panel.ActualHeight / panelHiddenDivider < 0 || btnCoord.Y >= this.ActualHeight - panel.ActualHeight)
             {
                 StartStakes();
             }
@@ -85,10 +90,20 @@ namespace OdinDurak {
             }
         }
 
-        private void Grid_MouseMove(object sender, MouseEventArgs e) {
-            prevPos = curPos;
-            curPos = e.GetPosition(this);
+        private void Grid_MouseMove(object sender, MouseEventArgs e) {            
+            Point curPos = e.GetPosition(this);
+            CheckPanelOverlap(curPos);
+        }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            Point curPos = Mouse.GetPosition(this);
+            CheckPanelOverlap(curPos);
+        }
+
+        private void Window_IsVisibleChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            Point curPos = Mouse.GetPosition(this);
             CheckPanelOverlap(curPos);
         }
     }

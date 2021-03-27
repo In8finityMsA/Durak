@@ -22,3 +22,30 @@ C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Release\OdinDurak.csproj.Generat
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Release\OdinDurak.csproj.CoreCompileInputs.cache
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Release\OdinDurak.exe
 C:\Users\Pavel\Source\Repos\Durak\OdinDurak\obj\Release\OdinDurak.pdb
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\4-2.gif
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\luka_klass.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\luka_ziga.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\rikardo_milos.jpg
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\rikardo_milos1.gif
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\videoplayback.mp4
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\OdinDurak.exe.config
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\OdinDurak.exe
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\OdinDurak.pdb
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.csprojAssemblyReference.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\MainWindow.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\Stakes.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\App.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak_Content.g.cs
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak_MarkupCompile.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak_MarkupCompile.lref
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\MainWindow.baml
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\Stakes.baml
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.g.resources
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.Properties.Resources.resources
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.csproj.GenerateResource.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.csproj.CoreCompileInputs.cache
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.exe
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\OdinDurak.pdb
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\bin\Release\Assets\Eula.txt
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\Credits.baml
+C:\Users\37544\Documents\Projects Visual Studio\OdinDurak\OdinDurak\obj\Release\Credits.g.cs
